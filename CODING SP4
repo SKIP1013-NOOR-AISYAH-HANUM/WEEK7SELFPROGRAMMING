@@ -1,0 +1,26 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class SP4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		int maxvalue;
+		
+		System.out.println("The table of sequence ad their logaritm");
+		
+		System.out.println("Enter the last number you choose");
+		maxvalue = input.nextInt();
+		
+		for ( int i =1; i<=maxvalue; i++)
+		{
+			System.out.println(i+ "\t" + Math.log(i));
+		}
+
+	}
+
+}
