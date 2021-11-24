@@ -1,0 +1,37 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class SP3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int  value;      
+	    int  sum = 0;    
+	    char choice;     
+
+	      
+	    Scanner input = new Scanner(System.in);
+
+	    do
+	    {
+	    	System.out.print("Enter integer: ");
+	        value = input.nextInt();
+
+	         
+	        sum = sum + value;
+
+	       
+	        System.out.print("Enter Y for yes or N for no: ");
+	        choice = input.next().charAt(0);
+	      }
+	      while ((choice == 'y') || (choice == 'Y'));
+
+	         
+	      System.out.println("Sum of the integers: " + sum);
+
+	}
+
+}
