@@ -1,0 +1,31 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class SP2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		int lolipop;
+		int sum=0;
+		
+		System.out.println("There are only 1-10 selected lolipop that you can choose");
+		System.out.println("Select your favourite lollipop :");
+		lolipop = input.nextInt();
+		
+		while ((lolipop<=10) && (lolipop>0)) {
+			sum=sum+lolipop;
+			System.out.println("You can choose the next flavour code you want :");
+			lolipop=input.nextInt();
+		}
+		
+		System.out.println("Now your total selected lolipop is " + sum);
+		
+			
+		
+
+	}
+
+}
