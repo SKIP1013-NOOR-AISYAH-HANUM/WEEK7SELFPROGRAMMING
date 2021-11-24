@@ -1,0 +1,32 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class SP1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		int num;
+		
+		System.out.println("Enter your exam marks : ");
+		num = input.nextInt();
+		
+		System.out.println("You will get one mark bonus if you pass the test");
+		System.out.println("You will be minus one mark if you fail the test");
+		
+		
+		if (num>50) {
+			num++;
+		}
+		else {
+			num--;
+		}
+		
+		System.out.println("Your final mark will be " +num);
+
+	}
+
+}
