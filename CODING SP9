@@ -1,0 +1,20 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class SP9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		int i;
+	    for (i = 0; i<=11 ; i++) {
+	      System.out.println("Studying for loops at midterm");
+	      System.out.println("Value of should be obtained = " + i);
+	    }
+		
+	}
+
+}
