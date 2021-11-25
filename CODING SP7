@@ -1,0 +1,29 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class SP7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int number = (int)(Math.random() * 11);
+		Scanner input = new Scanner(System.in);
+		int j , i= -1;
+        System.out.println (" Your seat is in random number");
+        while( i  != number ) {
+            System.out.println ("Choose your selected seat, some might be same" );
+            j= input.nextInt();
+            if ( j == number ) {
+                System.out.println("YAY SAME, STAY WHERE YOU ARE");
+            } 
+            else if (j <= number ) {
+                System.out.println ("OPS SORRY YOUR SEAT IS FAR BACK THEN");
+            } 
+            else {
+                System.out.println ("YOU HAVE TO MOVE TO THE NEXT FLOORF");    
+            }    
+        } 
+
+	}
+
+}
